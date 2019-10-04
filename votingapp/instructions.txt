@@ -1,0 +1,17 @@
+Mysql commands:
+
+
+
+create table voter(name varchar(50),email varchar(50),password varchar(50),age varchar(3),status varchar(5));
+create table votes(name varchar(50),count varchar(50));
+INSERT INTO `tecob230`.`votes`(`name`,`count`)VALUES("Candidate 1","0");
+INSERT INTO `tecob230`.`votes`(`name`,`count`)VALUES("Candidate 2","0");
+INSERT INTO `tecob230`.`votes`(`name`,`count`)VALUES("Candidate 3","0");
+INSERT INTO `tecob230`.`votes`(`name`,`count`)VALUES("Candidate 4","0");
+INSERT INTO `tecob230`.`votes`(`name`,`count`)VALUES("Candidate 5","0");
+
+Project Creation Instructions:
+
+Create java project with name as votingapp
+package name : votingapp
+change db name userid n password accordingly
