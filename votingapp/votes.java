@@ -1,10 +1,10 @@
 package votingapp;
 import java.sql.*;
 public class votes {
-	void result() throws ClassNotFoundException, SQLException
+	int result() throws ClassNotFoundException, SQLException
 	{
 		
-		
+		int flag=0;
 		Class.forName("com.mysql.jdbc.Driver");
 		
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost/tecob230","root","mysql");
@@ -15,6 +15,9 @@ public class votes {
 		{
 			System.out.println(rs.getString("name")+"   "+rs.getString("count"));
 		}
+		if(rs!=null)
+			flag=1;
+		return flag;
 	}
 	int vote(int i,String email) throws SQLException, ClassNotFoundException
 	{
